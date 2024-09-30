@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../styles/setting.css">
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <title>Setting Page</title>
+</head>
+<body>
+  <div class="setting-container">
+    <header class="setting-header">
+      <div class="setting-header-links">
+        <a class="setting-header-active-link" href="#">Set-Creator-Logic</a>
+        <a href="#">Formulas</a>
+      </div>
+      <div class="setting-header-buttons">
+        <button class="setting-header-discard-button">Discard</button>
+        <button class="setting-header-save-button-disabled" disabled>Save</button>
+        <button class="setting-header-formula-button">Create formula</button>
+      </div>
+    </header>
+    <div class="setting-input-wrapper">
+      <h1>Title</h1>
+      <input class="setting-input" placeholder="Set-Creator-Logic" type="text">
+    </div>
+    <div class="setting-empty-state">
+      <img src="../icons/empty-page.svg" alt="Empty page">
+      <span>Oopsie, seems that you have no formulas yet</span>
+      <span>Create your first formula!</span>
+      <button class="setting-add-formula-button">+</button>
+    </div>
+    <table class="no-spacing" cellspacing="0">
+      <thead class="table-head">
+        <tr class="table-row">
+          <th class="cell cell-header-text active-cell"> Formulas </th>
+          <th class="cell cell-header-text"></th>
+          <th class="cell cell-header-text"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-row">
+          <td class="cell content"> <a href="#"> BTC increase each 2 sec for T-Shirts </a> </td>
+          <td class="cell status"> <img src="../icons/edit.svg" alt="Edit"> </td>
+          <td class="cell delete-icon"> <img src="../icons/trash.svg" alt="Delete"/> </td>
+        </tr>
+        <tr class="table-row">
+          <td class="cell content"> <a href="#"> BTC increase each 2 sec for T-Shirts </a> </td>
+          <td class="cell status"> <img src="../icons/edit.svg" alt="Edit"> </td>
+          <td class="cell delete-icon"> <img src="../icons/trash.svg" alt="Delete"/> </td>
+        </tr>
+      </tbody>
+    </table>
+    <footer class="setting-footer">
+      <button class="setting-footer-back-button">
+        <img src="../icons/exit.svg" alt="Exit">
+        <span>Back</span>
+      </button>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../styles/formula.css">
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/setting.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <title>Setting Page</title>
+</head>
+<body>
+  <div class="setting-container">
+    <header class="setting-header">
+      <div class="setting-header-links">
+        <a class="setting-header-active-link" href="#">Set-Creator-Logic</a>
+        <a href="#">Formulas</a>
+      </div>
+      <div class="setting-header-buttons">
+        <button class="setting-header-discard-button">Discard</button>
+        <button class="setting-header-save-button-disabled" disabled>Save</button>
+        <button class="setting-header-formula-button">Create formula</button>
+      </div>
+    </header>
+    <div class="setting-input-wrapper">
+      <h1>Title</h1>
+      <input class="default-input" placeholder="Formula name" type="text">
+    </div>
+    <div class="containers-wrapper">
+      <div class="price-calculation-container">
+        <div class="price-calculation-title">
+          <h1> Price calculation </h1>
+          <img src="../icons/tooltip.svg" alt="tooltip">
+        </div>
+        <div class="price-calculation-formula">
+          <div class="input-price-wrapper">
+            <h2>Formula</h2>
+            <input class="default-input" type="text" placeholder="Value">
+            <span class="input-tooltip"> X - cryptocurrency price, Y - product price </span>
+          </div>
+        </div>
+        <div class="price-calculation-frequency">
+          <div class="input-price-wrapper">
+            <h2>Frequency</h2>
+            <input class="default-input" type="text" placeholder="Value">
+            <span class="input-tooltip"> Cryptocurrency price update frequency </span>
+          </div>
+        </div>
+        <div class="price-calculator">
+          <div class="default-search-input">
+            <div class="default-input">
+              <img src="../icons/search.svg" alt="Search">
+              <input type="text" placeholder="Search">
+            </div>
+            <span class="input-tooltip">
+              Select crypto from the list of search the one you need
+            </span>
+          </div>
+          <div class="content-wrapper">
+            <div class="content-item">
+              <img src="../icons/case.svg" alt="">
+              <span>Content</span>
+              <hr>
+            </div>
+            <div class="content-item">
+              <img src="../icons/case.svg" alt="">
+              <span>Content</span>
+              <hr>
+            </div>
+            <div class="content-item">
+              <img src="../icons/case.svg" alt="">
+              <span>Content</span>
+              <hr>
+            </div>
+            <div class="content-item">
+              <img src="../icons/case.svg" alt="">
+              <span>Content</span>
+              <hr>
+            </div>
+            <div class="content-item">
+              <img src="../icons/case.svg" alt="">
+              <span>Content</span>
+              <hr>
+            </div>
+            <div class="content-item">
+              <img src="../icons/case.svg" alt="">
+              <span>Content</span>
+              <hr>
+            </div>
+            <div class="content-item">
+              <img src="../icons/case.svg" alt="">
+              <span>Content</span>
+            </div>
+          </div>
+          <button class="form-save-button"> Save </button>
+        </div>
+      </div>
+      <div class="formula-form-wrapper">
+        <form class="add-collections-container" action="">
+          <div class="add-collections">
+            <h1>Add collections</h1>
+            <img src="../icons/collapse.svg" alt="Collapse">
+          </div>
+          <div class="search-input-container">
+            <img src="../icons/search.svg" alt="Search">
+            <input type="text" placeholder="Search">
+          </div>
+          <div class="input-selected">
+            <input type="checkbox">
+            <span> 2 selected </span>
+          </div>
+          <div class="collection-items">
+            <div class="collection-item">
+              <input type="checkbox">
+              <img src="../icons/case.svg" alt="">
+              <span>Collection 1</span>
+            </div>
+            <div class="collection-item">
+              <input type="checkbox">
+              <img src="../icons/case.svg" alt="">
+              <span>Collection 2</span>
+            </div>
+            <div class="collection-item">
+              <input type="checkbox">
+              <img src="../icons/case.svg" alt="">
+              <span>Collection 3</span>
+            </div>
+          </div>
+          <div class="form-buttons">
+            <button class="form-cancel-button">Cancel</button>
+            <button class="form-save-button">Save</button>
+          </div>
+        </form>
+        <form class="add-products-container" action="">
+          <div>
+            <h1>Add products</h1>
+            <img src="../icons/collapse.svg" alt="Collapse">
+          </div>
+          <div class="input-container">
+            <img src="../icons/search.svg" alt="Search">
+            <input class="default-search-input" type="text" placeholder="Search">
+          </div>
+          <div class="product-list">
+            <div>
+              <input type="checkbox">
+              <img src="../icons/case.svg" alt="">
+              <span> Product 1 </span>
+            </div>
+            <ul>
+              <li>
+                <div class="product-item">
+                  <input type="checkbox">
+                  <img src="../icons/case.svg" alt="">
+                  <span> Variant 1 </span>
+                </div>
+              </li>
+              <li>
+                <div class="product-item">
+                  <input type="checkbox">
+                  <img src="../icons/case.svg" alt="">
+                  <span> Product 2 </span>
+                </div>
+              </li>
+              <li>
+                <div class="product-item">
+                  <input type="checkbox">
+                  <img src="../icons/case.svg" alt="">
+                  <span> Variant 3 </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <hr>
+          <div class="product-list">
+            <div>
+              <input type="checkbox">
+              <img src="../icons/case.svg" alt="">
+              <span> Product 2 </span>
+            </div>
+            <ul>
+              <li>
+                <div class="product-item">
+                  <input type="checkbox">
+                  <img src="../icons/case.svg" alt="">
+                  <span> Variant 1 </span>
+                </div>
+              </li>
+              <li>
+                <div class="product-item">
+                  <input type="checkbox">
+                  <img src="../icons/case.svg" alt="">
+                  <span> Product 2 </span>
+                </div>
+              </li>
+              <li>
+                <div class="product-item">
+                  <input type="checkbox">
+                  <img src="../icons/case.svg" alt="">
+                  <span> Variant 3 </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="setting-footer">
+      <button class="setting-footer-back-button">
+        <img src="../icons/exit.svg" alt="Exit">
+        <span>Back</span>
+      </button>
+    </footer>
+  </div>
+</body>
+</html>
