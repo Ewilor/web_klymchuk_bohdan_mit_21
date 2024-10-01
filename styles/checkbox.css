@@ -1,0 +1,55 @@
+/* Сховати стандартний чекбокс */
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+
+/* Стилізувати кастомний чекбокс */
+.custom-checkbox {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+/* Кастомний чекбокс */
+.checkbox-checkmark {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+
+/* Псевдоелемент для відображення чекнутого стану */
+.custom-checkbox input[type="checkbox"]:checked + .checkbox-checkmark {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+
+/* Псевдоелемент для відображення галочки всередині чекбоксу */
+.checkbox-checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Галочка при вибраному чекбоксі */
+.custom-checkbox input[type="checkbox"]:checked + .checkbox-checkmark::after {
+  display: block;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  top: 50%;
+  left: 50%;
+  margin-left: -3px;
+  margin-top: -6px;
+}
