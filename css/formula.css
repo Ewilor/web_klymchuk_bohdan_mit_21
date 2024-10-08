@@ -1,0 +1,137 @@
+hr {
+  display: block;
+  margin: 0.5em auto;
+  border-style: inset;
+  border-width: 1px;
+  opacity: 0.5;
+  border-color: grey;
+  width: 100%;
+}
+
+.containers-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "calculations collections" ". products";
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.price-calculation-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #FFF;
+  box-shadow: 0px 4px 6px -2px rgba(26, 26, 26, 0.2), inset 1px 0px 0px rgba(0, 0, 0, 0.13), inset -1px 0px 0px rgba(0, 0, 0, 0.13), inset 0px -1px 0px rgba(0, 0, 0, 0.17), inset 0px 1px 0px rgba(204, 204, 204, 0.5);
+  border-radius: 8px;
+  padding: 28px;
+  grid-area: calculations;
+}
+
+.price-calculation-title {
+  display: flex;
+  gap: 10px;
+}
+.price-calculation-title > h1 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 650;
+}
+
+.input-price-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
+.input-price-wrapper > span {
+  color: #616161;
+}
+
+.price-calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #8A8A8A;
+  border-radius: 8px;
+}
+.price-calculator .content-wrapper {
+  overflow: auto;
+  max-height: 190px;
+}
+.price-calculator .content-wrapper .content-item hr {
+  border-color: #EBEBEB;
+  opacity: 0.4;
+}
+
+.default-search-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.default-search-input > span {
+  color: #616161;
+}
+
+.price-calculation-formula {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-collections-container {
+  background-color: #fff;
+  box-shadow: 0px 4px 6px -2px rgba(26, 26, 26, 0.2), inset 1px 0px 0px rgba(0, 0, 0, 0.13), inset -1px 0px 0px rgba(0, 0, 0, 0.13), inset 0px -1px 0px rgba(0, 0, 0, 0.17), inset 0px 1px 0px rgba(204, 204, 204, 0.5);
+  border-radius: 8px;
+  padding: 28px;
+  grid-area: collections;
+}
+
+.add-products-container {
+  grid-area: products;
+}
+
+.formula-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add-collections {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-input-container {
+  margin: 20px 0;
+  background-color: white;
+  padding: 12px;
+  box-shadow: 0px 4px 6px -2px rgba(26, 26, 26, 0.2), inset 1px 0px 0px rgba(0, 0, 0, 0.13), inset -1px 0px 0px rgba(0, 0, 0, 0.13), inset 0px -1px 0px rgba(0, 0, 0, 0.17), inset 0px 1px 0px rgba(204, 204, 204, 0.5);
+  border-radius: 8px;
+}
+
+.input-selected {
+  display: flex;
+  gap: 5px;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.collection-items {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.collection-items > .collection-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+.form-buttons > button {
+  flex: 1;
+}/*# sourceMappingURL=formula.css.map */

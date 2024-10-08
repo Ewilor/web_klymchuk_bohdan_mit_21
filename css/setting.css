@@ -2,7 +2,6 @@
   padding: 40px 32px;
   height: 100vh;
   background-color: #F1F1F1;
-  font-family: "Inter";
 }
 
 .setting-header {
@@ -29,12 +28,6 @@
   border-radius: 8px;
 }
 
-.setting-header-discard-button {
-  box-shadow: inset 0px -1px 0px #B5B5B5, inset -1px 0px 0px #E3E3E3, inset 1px 0px 0px #E3E3E3, inset 0px 1px 0px #E3E3E3;
-  background: #fff;
-  color: #303030
-}
-
 .setting-header-save-button {
   border: 1px solid transparent;
 }
@@ -43,12 +36,6 @@
   border: 1px solid transparent;
   color: #B5B5B5;
   background: rgba(0, 0, 0, 0.05);
-}
-
-.setting-header-formula-button {
-  color: #FFFFFF;
-  background: #303030;
-  box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.2), inset 2px 0px 0px rgba(255, 255, 255, 0.2), inset -2px 0px 0px rgba(255, 255, 255, 0.2), inset 0px -1px 0px 1px #000000, inset 0px 1px 0px #000000;
 }
 
 .setting-input-wrapper {
@@ -81,40 +68,20 @@
   background: #FFFFFF;
   box-shadow: 0px 4px 6px -2px rgba(26, 26, 26, 0.2), inset 1px 0px 0px rgba(0, 0, 0, 0.13), inset -1px 0px 0px rgba(0, 0, 0, 0.13), inset 0px -1px 0px rgba(0, 0, 0, 0.17), inset 0px 1px 0px rgba(204, 204, 204, 0.5);
   border-radius: 12px;
-
-  img {
-    width: 150px;
-
-    + span {
-      font-weight: 650;
-      line-height: 20px;
-    }
-  }
-
-  button {
-    margin-top: 15px;
-    box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.2), inset 2px 0px 0px rgba(255, 255, 255, 0.2), inset -2px 0px 0px rgba(255, 255, 255, 0.2), inset 0px -1px 0px 1px #000000, inset 0px 1px 0px #000000;
-    background: #303030;
-    border-radius: 8px;
-    color: #FFFFFF;
-    width: 33px;
-    height: 32px;
-  }
 }
-
-.setting-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-  background-color: white;
-  padding: 20px;
-  width: 100%;
+.setting-empty-state img {
+  width: 150px;
 }
-
-.setting-footer-back-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
+.setting-empty-state img + span {
+  font-weight: 650;
+  line-height: 20px;
 }
+.setting-empty-state button {
+  margin-top: 15px;
+  box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.2), inset 2px 0px 0px rgba(255, 255, 255, 0.2), inset -2px 0px 0px rgba(255, 255, 255, 0.2), inset 0px -1px 0px 1px #000000, inset 0px 1px 0px #000000;
+  background: #303030;
+  border-radius: 8px;
+  color: #FFFFFF;
+  width: 33px;
+  height: 32px;
+}/*# sourceMappingURL=setting.css.map */

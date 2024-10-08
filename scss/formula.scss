@@ -73,22 +73,6 @@ hr {
   }
 }
 
-.form-save-button {
-  padding: 6px 12px;
-  color: #fff;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.07) 82.14%, rgba(255, 255, 255, 0.15) 94.44%);
-  box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.2), inset 2px 0px 0px rgba(255, 255, 255, 0.2), inset -2px 0px 0px rgba(255, 255, 255, 0.2), inset 0px -1px 0px 1px #000000, inset 0px 1px 0px #000000;
-  background-color: #303030;
-  border-radius: 8px;
-}
-
-.form-cancel-button {
-  background: #FFFFFF;
-  box-shadow: inset 0px -1px 0px #B5B5B5, inset -1px 0px 0px #E3E3E3, inset 1px 0px 0px #E3E3E3, inset 0px 1px 0px #E3E3E3;
-  border-radius: 8px;
-  color: #303030;
-}
-
 .default-search-input {
   display: flex;
   flex-direction: column;
