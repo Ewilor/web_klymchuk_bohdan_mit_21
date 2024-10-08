@@ -79,12 +79,10 @@ table {
   border-radius: 4px;
 
   &__tab {
-    display: flex;
+    @include flex-center;
     flex-direction: row;
-    align-items: center;
     padding: 12px 12px;
-    justify-content: center;
-  
+
     font-weight: 450;
     font-size: 13px;
     line-height: 20px;
@@ -127,9 +125,7 @@ table {
   width: 100%;
 
   &--back-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     gap: 8px;
   }
 }
