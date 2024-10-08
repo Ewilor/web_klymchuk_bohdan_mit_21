@@ -1,9 +1,12 @@
 /* Reset and base styles  */
+@import "variables.scss";
+
 * {
   padding: 0px;
   margin: 0px;
   border: none;
-  font-size: 14px;
+  font-size: $primary-font-size;
+  font-family: $font-stack;
 }
 
 *,
