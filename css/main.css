@@ -1,3 +1,16 @@
+@charset "UTF-8";
+@media (max-width: 768px) {
+  /* Стилі для планшетів та мобільних пристроїв */
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  /* Стилі для комп'ютерів */
+  .container {
+    width: 100%;
+  }
+}
 table {
   width: 100%;
   border: 1px solid #E3E3E3;
@@ -66,10 +79,10 @@ table tr:first-child th:last-child {
 }
 .tabs__tab {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 12px;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 12px 12px;
   font-weight: 450;
   font-size: 13px;
   line-height: 20px;
@@ -428,12 +441,12 @@ hr {
 
 .setting-empty-state {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50vw;
   height: 50vh;
   margin: 0 auto 20px;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 8px;
   background: #FFFFFF;
   box-shadow: 0px 4px 6px -2px rgba(26, 26, 26, 0.2), inset 1px 0px 0px rgba(0, 0, 0, 0.13), inset -1px 0px 0px rgba(0, 0, 0, 0.13), inset 0px -1px 0px rgba(0, 0, 0, 0.17), inset 0px 1px 0px rgba(204, 204, 204, 0.5);
