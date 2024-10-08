@@ -1,1 +1,13 @@
-/*# sourceMappingURL=layout.css.map */
+@charset "UTF-8";
+@media (max-width: 768px) {
+  /* Стилі для планшетів та мобільних пристроїв */
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  /* Стилі для комп'ютерів */
+  .container {
+    width: 100%;
+  }
+}/*# sourceMappingURL=layout.css.map */
