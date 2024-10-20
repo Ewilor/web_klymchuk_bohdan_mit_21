@@ -1,0 +1,23 @@
+@import "variables.scss";
+
+.container {
+  padding: 40px 32px;
+  height: 100vh;
+  background-color: $primary-page-background-color;
+}
+
+.page-header-text {
+  width: 98px;
+  height: 32px;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+  color: #303030;
+}
+
+.delete-icon {
+  text-align: center;
+}

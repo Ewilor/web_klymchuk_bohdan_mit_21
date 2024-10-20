@@ -4,10 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="../styles/formula.css">
-  <link rel="stylesheet" href="../styles/reset.css">
-  <link rel="stylesheet" href="../styles/setting.css">
-  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../css/main.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,9 +20,9 @@
         <a href="#">Formulas</a>
       </div>
       <div class="setting-header-buttons">
-        <button class="setting-header-discard-button">Discard</button>
+        <button class="cancel-button">Discard</button>
         <button class="setting-header-save-button-disabled" disabled>Save</button>
-        <button class="setting-header-formula-button">Create formula</button>
+        <button class="save-create-button">Create formula</button>
       </div>
     </header>
     <div class="setting-input-wrapper">
@@ -63,47 +60,41 @@
             </span>
           </div>
           <div class="content-wrapper">
-            <div class="content-item">
+            <div class="content-wrapper__content-item">
               <img src="../icons/case.svg" alt="">
               <span>Content</span>
-              <hr>
             </div>
-            <div class="content-item">
+            <div class="content-wrapper__content-item">
               <img src="../icons/case.svg" alt="">
               <span>Content</span>
-              <hr>
             </div>
-            <div class="content-item">
+            <div class="content-wrapper__content-item">
               <img src="../icons/case.svg" alt="">
               <span>Content</span>
-              <hr>
             </div>
-            <div class="content-item">
+            <div class="content-wrapper__content-item">
               <img src="../icons/case.svg" alt="">
               <span>Content</span>
-              <hr>
             </div>
-            <div class="content-item">
+            <div class="content-wrapper__content-item">
               <img src="../icons/case.svg" alt="">
               <span>Content</span>
-              <hr>
             </div>
-            <div class="content-item">
+            <div class="content-wrapper__content-item">
               <img src="../icons/case.svg" alt="">
               <span>Content</span>
-              <hr>
             </div>
-            <div class="content-item">
+            <div class="content-wrapper__content-item">
               <img src="../icons/case.svg" alt="">
               <span>Content</span>
             </div>
           </div>
-          <button class="form-save-button"> Save </button>
+          <button class="save-create-button"> Save </button>
         </div>
       </div>
       <div class="formula-form-wrapper">
         <form class="add-collections-container" action="">
-          <div class="add-collections">
+          <div class="collapse-title">
             <h1>Add collections</h1>
             <img src="../icons/collapse.svg" alt="Collapse">
           </div>
@@ -133,80 +124,56 @@
             </div>
           </div>
           <div class="form-buttons">
-            <button class="form-cancel-button">Cancel</button>
-            <button class="form-save-button">Save</button>
+            <button class="cancel-button">Cancel</button>
+            <button class="save-create-button">Save</button>
           </div>
         </form>
         <form class="add-products-container" action="">
-          <div>
+          <div class="collapse-title">
             <h1>Add products</h1>
             <img src="../icons/collapse.svg" alt="Collapse">
           </div>
-          <div class="input-container">
+          <div class="search-input-container">
             <img src="../icons/search.svg" alt="Search">
-            <input class="default-search-input" type="text" placeholder="Search">
+            <input type="text" placeholder="Search">
           </div>
           <div class="product-list">
-            <div>
-              <input type="checkbox">
-              <img src="../icons/case.svg" alt="">
-              <span> Product 1 </span>
+            <div class="product-list__section">
+              <div class="product-list__section--item">
+                <input type="checkbox">
+                <img src="../icons/case.svg" alt="">
+                <span> Product 1 </span>
+              </div>
+              <div class="product-list__section--item variant">
+                <input type="checkbox">
+                <img src="../icons/case.svg" alt="">
+                <span> Variant 1 </span>
+              </div>
             </div>
-            <ul>
-              <li>
-                <div class="product-item">
-                  <input type="checkbox">
-                  <img src="../icons/case.svg" alt="">
-                  <span> Variant 1 </span>
-                </div>
-              </li>
-              <li>
-                <div class="product-item">
-                  <input type="checkbox">
-                  <img src="../icons/case.svg" alt="">
-                  <span> Product 2 </span>
-                </div>
-              </li>
-              <li>
-                <div class="product-item">
-                  <input type="checkbox">
-                  <img src="../icons/case.svg" alt="">
-                  <span> Variant 3 </span>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <hr>
-          <div class="product-list">
-            <div>
-              <input type="checkbox">
-              <img src="../icons/case.svg" alt="">
-              <span> Product 2 </span>
+            <div class="product-list__section">
+              <div class="product-list__section--item">
+                <input type="checkbox">
+                <img src="../icons/case.svg" alt="">
+                <span> Product 2 </span>
+              </div>
+              <div class="product-list__section--item variant">
+                <input type="checkbox">
+                <img src="../icons/case.svg" alt="">
+                <span> Variant 3 </span>
+              </div>
             </div>
-            <ul>
-              <li>
-                <div class="product-item">
-                  <input type="checkbox">
-                  <img src="../icons/case.svg" alt="">
-                  <span> Variant 1 </span>
-                </div>
-              </li>
-              <li>
-                <div class="product-item">
-                  <input type="checkbox">
-                  <img src="../icons/case.svg" alt="">
-                  <span> Product 2 </span>
-                </div>
-              </li>
-              <li>
-                <div class="product-item">
-                  <input type="checkbox">
-                  <img src="../icons/case.svg" alt="">
-                  <span> Variant 3 </span>
-                </div>
-              </li>
-            </ul>
-          </div>
+            <div class="product-list__section">
+              <div class="product-list__section--item active">
+                <input type="checkbox">
+                <img src="../icons/case.svg" alt="">
+                <span> Product 3 </span>
+              </div>
+              <div class="product-list__section--item variant active">
+                <input type="checkbox">
+                <img src="../icons/case.svg" alt="">
+                <span> Variant 1 </span>
+              </div>
+            </div>
         </form>
       </div>
     </div>

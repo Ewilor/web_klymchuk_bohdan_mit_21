@@ -1,0 +1,90 @@
+@import "variables.scss";
+
+.setting-container {
+  padding: 40px 32px;
+  height: 100%;
+  background-color: $primary-page-background-color;
+}
+
+.setting-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.setting-header-links {
+  display: flex;
+  gap: 10px;
+}
+
+.setting-header-active-link {
+  color: #303030 !important;
+}
+
+.setting-header-links a {
+  color: #616161;
+}
+
+.setting-header-buttons button {
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.setting-header-save-button {
+  border: 1px solid transparent;
+}
+
+.setting-header-save-button-disabled {
+  border: 1px solid transparent;
+  color: #B5B5B5;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.setting-input-wrapper {
+  display: flex;
+  margin: 20px 0;
+  background-color: white;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  box-shadow: 0px 4px 6px -2px rgba(26, 26, 26, 0.2), inset 1px 0px 0px rgba(0, 0, 0, 0.13), inset -1px 0px 0px rgba(0, 0, 0, 0.13), inset 0px -1px 0px rgba(0, 0, 0, 0.17), inset 0px 1px 0px rgba(204, 204, 204, 0.5);
+  border-radius: 8px;
+}
+
+.default-input {
+  padding: 6px 12px;
+  background: #FDFDFD;
+  border: 0.66px solid #8A8A8A;
+  border-radius: 8px;
+}
+
+.setting-empty-state {
+  @include flex-center;
+  width: 50vw;
+  height: 50vh;
+  margin: 0 auto 20px;
+  flex-direction: column;
+  gap: 8px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 6px -2px rgba(26, 26, 26, 0.2), inset 1px 0px 0px rgba(0, 0, 0, 0.13), inset -1px 0px 0px rgba(0, 0, 0, 0.13), inset 0px -1px 0px rgba(0, 0, 0, 0.17), inset 0px 1px 0px rgba(204, 204, 204, 0.5);
+  border-radius: 12px;
+
+  img {
+    width: 150px;
+
+    + span {
+      font-weight: 650;
+      line-height: 20px;
+    }
+  }
+
+  button {
+    margin-top: 15px;
+    box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.2), inset 2px 0px 0px rgba(255, 255, 255, 0.2), inset -2px 0px 0px rgba(255, 255, 255, 0.2), inset 0px -1px 0px 1px #000000, inset 0px 1px 0px #000000;
+    background: #303030;
+    border-radius: 8px;
+    color: #FFFFFF;
+    width: 33px;
+    height: 32px;
+  }
+}
