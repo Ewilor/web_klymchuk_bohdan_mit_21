@@ -1,7 +1,9 @@
+@import "variables.scss";
+
 .container {
   padding: 40px 32px;
   height: 100vh;
-  background-color: #F1F1F1;
+  background-color: $primary-page-background-color;
 }
 
 .page-header-text {

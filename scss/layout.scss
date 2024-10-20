@@ -1,7 +1,15 @@
 @media (max-width: 768px) {
   /* Стилі для планшетів та мобільних пристроїв */
-  .container {
-      width: 100%;
+  .setting-container {
+    .setting-empty-state {
+      text-align: center;
+    }
+
+    .containers-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 }
 

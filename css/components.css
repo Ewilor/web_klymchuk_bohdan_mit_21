@@ -66,10 +66,10 @@ table tr:first-child th:last-child {
 }
 .tabs__tab {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 12px;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 12px 12px;
   font-weight: 450;
   font-size: 13px;
   line-height: 20px;
@@ -112,4 +112,12 @@ table tr:first-child th:last-child {
   justify-content: center;
   align-items: center;
   gap: 8px;
+}
+
+.collapse-title {
+  display: flex;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 650;
+  justify-content: space-between;
 }/*# sourceMappingURL=components.css.map */

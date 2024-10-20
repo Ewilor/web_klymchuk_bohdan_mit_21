@@ -1,3 +1,6 @@
+@import "variables.scss";
+@import "mixins.scss";
+
 table {
   width: 100%;
   border: 1px solid #E3E3E3;
@@ -128,4 +131,12 @@ table {
     @include flex-center;
     gap: 8px;
   }
+}
+
+.collapse-title {
+  display: flex;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 650;
+  justify-content: space-between;
 }

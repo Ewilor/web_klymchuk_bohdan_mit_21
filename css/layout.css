@@ -1,8 +1,13 @@
 @charset "UTF-8";
 @media (max-width: 768px) {
   /* Стилі для планшетів та мобільних пристроїв */
-  .container {
-    width: 100%;
+  .setting-container .setting-empty-state {
+    text-align: center;
+  }
+  .setting-container .containers-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }
 @media (min-width: 1024px) {

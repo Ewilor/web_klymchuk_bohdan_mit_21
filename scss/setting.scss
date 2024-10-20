@@ -1,7 +1,9 @@
+@import "variables.scss";
+
 .setting-container {
   padding: 40px 32px;
-  height: 100vh;
-  background-color: #F1F1F1;
+  height: 100%;
+  background-color: $primary-page-background-color;
 }
 
 .setting-header {
