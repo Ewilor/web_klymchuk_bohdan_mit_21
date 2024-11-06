@@ -18,4 +18,7 @@
 
 .delete-icon {
   text-align: center;
+}
+.delete-icon > img {
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

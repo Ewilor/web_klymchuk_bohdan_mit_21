@@ -1,3 +1,4 @@
+@charset "UTF-8";
 table {
   width: 100%;
   border: 1px solid #E3E3E3;
@@ -26,6 +27,9 @@ table .table-row .cell.content {
 }
 table .table-row .cell.content > a {
   color: #005BD3;
+}
+table .table-row .thead-status > div {
+  padding-left: 8px;
 }
 table tr:last-child td:first-child {
   border-bottom-left-radius: 8px;
@@ -120,4 +124,105 @@ table tr:first-child th:last-child {
   font-size: 20px;
   font-weight: 650;
   justify-content: space-between;
+}
+
+/* Сховати стандартний чекбокс */
+.custom-checkbox input[type=checkbox] {
+  display: none;
+}
+
+/* Стилізувати кастомний чекбокс */
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-weight: 650;
+  gap: 10px;
+  border-top: none !important;
+}
+
+/* Кастомний чекбокс */
+.checkbox-checkmark {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 1px solid #8A8A8A;
+  border-radius: 4px;
+}
+
+/* Псевдоелемент для відображення чекнутого стану */
+.custom-checkbox input[type=checkbox]:checked + .checkbox-checkmark {
+  background-color: #303030;
+  border-color: #303030;
+}
+
+/* Псевдоелемент для відображення галочки всередині чекбоксу */
+.checkbox-checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Галочка при вибраному чекбоксі */
+.custom-checkbox input[type=checkbox]:checked + .checkbox-checkmark::after {
+  display: block;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  top: 50%;
+  left: 50%;
+  margin-left: -3px;
+  margin-top: -8px;
+}
+
+.custom-checkbox-selected input[type=checkbox] {
+  display: none;
+}
+
+.custom-checkbox-selected {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.checkbox-checkmark-selected {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 1px solid #8A8A8A;
+  border-radius: 4px;
+}
+
+/* Псевдоелемент для відображення чекнутого стану */
+.custom-checkbox-selected input[type=checkbox]:checked + .checkbox-checkmark-selected {
+  background-color: #303030;
+  border-color: #303030;
+}
+
+/* Псевдоелемент для відображення галочки всередині чекбоксу */
+.checkbox-checkmark-selected::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Галочка при вибраному чекбоксі */
+.custom-checkbox-selected input[type=checkbox]:checked + .checkbox-checkmark-selected::after {
+  display: block;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0px 2px 0px 0px;
+  transform: rotate(90deg);
+  top: 50%;
+  left: 50%;
+  margin-left: -3px;
+  margin-top: -7px;
 }/*# sourceMappingURL=components.css.map */

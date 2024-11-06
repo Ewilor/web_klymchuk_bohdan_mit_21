@@ -97,6 +97,9 @@ hr {
   padding: 28px;
   grid-area: products;
 }
+.add-products-container .product-list {
+  margin: 20px 0;
+}
 .add-products-container .product-list__section {
   display: flex;
   flex-direction: column;
@@ -106,6 +109,7 @@ hr {
   display: flex;
   align-items: center;
   padding: 2px 10px;
+  margin: 3px 0;
   gap: 15px;
   border-bottom: 1px solid #EBEBEB;
 }
